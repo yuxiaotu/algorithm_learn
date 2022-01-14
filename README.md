@@ -24,6 +24,8 @@
 [二叉树](https://www.geeksforgeeks.org/binary-tree-data-structure/) 是最常见的一种树形结构，其每个结点最多只有两个子树。二叉树的子树有左右之分，位置不能颠倒。
 - [二叉搜索树的实现](./note/二叉搜索树的实现.md)
 - [二叉树的层序遍历](./note/二叉树的层序遍历.md)
+- [二叉树的中序遍历](./note/二叉树的中序遍历.md)
+- [从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 
 ## 04. 滑动窗口
 用以解决数组/字符串的子元素问题，它可以将嵌套的循环问题，转换为单循环问题，降低时间复杂度。
