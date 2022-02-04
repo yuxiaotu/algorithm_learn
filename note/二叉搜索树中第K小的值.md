@@ -1,6 +1,6 @@
 # [二叉搜索树中第K小的值](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/)
 
-- 使用中序遍历，第 `k` 个访问到的结点就是第 `k` 小的值。
+- 使用「中序遍历」，第 `k` 个访问到的结点就是第 `k` 小的值。
 
 ## 01. JavaScript
 ```js
@@ -19,5 +19,24 @@ var kthSmallest = function(root, k) {
     root = root.right;
   } 
   return root.val;
+}
+```
+
+
+## 02. Java
+```java
+class Solution {
+  public int kthSmallest(TreeNode root, int k) {
+    Deque<TreeNode> stack = new ArrayDeque<TreeNode>();
+    while (root != null || !stack.isEmpty()) {
+      root = stack.pop();
+      --k;
+      if (k == 0) {
+        break;
+      }
+      root = root.right;
+    }
+    return root;
+  }
 }
 ```
