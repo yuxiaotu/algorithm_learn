@@ -2,7 +2,8 @@
 
 - 使用「中序遍历」，第 `k` 个访问到的结点就是第 `k` 小的值。
 
-## 01. JavaScript
+# 1. JavaScript
+
 ```js
 var kthSmallest = function(root, k) {
   let stack = [];
@@ -22,8 +23,8 @@ var kthSmallest = function(root, k) {
 }
 ```
 
+# 2. Java
 
-## 02. Java
 ```java
 class Solution {
   public int kthSmallest(TreeNode root, int k) {

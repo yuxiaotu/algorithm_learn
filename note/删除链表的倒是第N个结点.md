@@ -5,7 +5,8 @@
 - 然后再同时向前移动。
 - 当 `fast` 指针指向最后一个结点时，`slow` 指针指向倒数第 n 个结点。
 
-## 01. Javascript
+# 1. Javascript
+
 ```js
 var removeNtheFromEnd = function(head, n) {
   let fast = head;
